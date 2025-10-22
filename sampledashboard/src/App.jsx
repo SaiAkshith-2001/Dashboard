@@ -1,9 +1,9 @@
-import { Sidebar } from "./components/Sidebar";
+import Home from "./Pages/Home";
 
 function App() {
   return (
     <>
-      <Sidebar />
+      <Home />
     </>
   );
 }
