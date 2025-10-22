@@ -1,9 +1,9 @@
-import Home from "./Pages/Home.jsx";
+import AppRoute from "./Routes/index.jsx";
 
 function App() {
   return (
     <>
-      <Home />
+      <AppRoute />
     </>
   );
 }
