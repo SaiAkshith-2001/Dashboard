@@ -1,0 +1,451 @@
+export const headerData = {
+  breadcrumbs: [
+    { id: 1, label: "Dashboards", link: "#" },
+    { id: 2, label: "Default", link: "#", active: true },
+  ],
+  search: {
+    placeholder: "Search",
+    shortcut: "⌘/",
+  },
+};
+
+export const navigationData = {
+  user: "ByeWind",
+  sections: [
+    {
+      id: "favorites",
+      title: "Favorites",
+      type: "header",
+    },
+    {
+      id: "overview",
+      title: "Overview",
+      type: "link",
+      icon: "overview",
+    },
+    {
+      id: "projects",
+      title: "Projects",
+      type: "link",
+      icon: "projects",
+    },
+    {
+      id: "dashboards",
+      title: "Dashboards",
+      type: "header",
+    },
+    {
+      id: "default",
+      title: "Default",
+      type: "link",
+      icon: "dashboard",
+      active: true,
+    },
+    {
+      id: "ecommerce",
+      title: "eCommerce",
+      type: "link",
+      icon: "ecommerce",
+    },
+    {
+      id: "projects-dash",
+      title: "Projects",
+      type: "link",
+      icon: "folder",
+    },
+    {
+      id: "online-courses",
+      title: "Online Courses",
+      type: "link",
+      icon: "courses",
+    },
+    {
+      id: "pages",
+      title: "Pages",
+      type: "header",
+    },
+    {
+      id: "user-profile",
+      title: "User Profile",
+      type: "accordion",
+      icon: "user",
+      children: [
+        { id: "overview-sub", title: "Overview" },
+        { id: "projects-sub", title: "Projects" },
+        { id: "campaigns", title: "Campaigns" },
+        { id: "documents", title: "Documents" },
+        { id: "followers", title: "Followers" },
+      ],
+    },
+    {
+      id: "account",
+      title: "Account",
+      type: "link",
+      icon: "account",
+    },
+    {
+      id: "corporate",
+      title: "Corporate",
+      type: "link",
+      icon: "corporate",
+    },
+    {
+      id: "blog",
+      title: "Blog",
+      type: "link",
+      icon: "blog",
+    },
+    {
+      id: "social",
+      title: "Social",
+      type: "link",
+      icon: "social",
+    },
+  ],
+};
+
+export const dashboardData = {
+  title: "eCommerce",
+  stats: [
+    {
+      id: 1,
+      label: "Customers",
+      value: "3,781",
+      change: "+11.01%",
+      trend: "up",
+      bgColor: "bg-blue-50",
+    },
+    {
+      id: 2,
+      label: "Orders",
+      value: "1,219",
+      change: "-0.03%",
+      trend: "down",
+      bgColor: "bg-gray-50",
+    },
+    {
+      id: 3,
+      label: "Revenue",
+      value: "$695",
+      change: "+15.03%",
+      trend: "up",
+      bgColor: "bg-gray-50",
+    },
+    {
+      id: 4,
+      label: "Growth",
+      value: "30.1%",
+      change: "+6.08%",
+      trend: "up",
+      bgColor: "bg-blue-50",
+    },
+  ],
+  projectionsData: [
+    { month: "Jan", value: 18 },
+    { month: "Feb", value: 22 },
+    { month: "Mar", value: 19 },
+    { month: "Apr", value: 24 },
+    { month: "May", value: 17 },
+    { month: "Jun", value: 23 },
+  ],
+  revenueData: [
+    { month: "Jan", current: 15, previous: 12 },
+    { month: "Feb", current: 18, previous: 20 },
+    { month: "Mar", current: 12, previous: 18 },
+    { month: "Apr", current: 20, previous: 15 },
+    { month: "May", current: 15, previous: 22 },
+    { month: "Jun", current: 22, previous: 20 },
+  ],
+  revenueComparison: {
+    current: "$58,211",
+    previous: "$68,768",
+  },
+  revenueByLocation: [
+    { city: "New York", amount: "72K", coordinates: [40.7, -74.0] },
+    { city: "San Francisco", amount: "39K", coordinates: [37.7, -122.4] },
+    { city: "Sydney", amount: "25K", coordinates: [33.8, 151.2] },
+    { city: "Singapore", amount: "61K", coordinates: [1.3, 103.8] },
+  ],
+  topSellingProducts: [
+    {
+      name: "ASOS Ridley High Waist",
+      price: "$79.49",
+      quantity: 82,
+      amount: "$6,518.18",
+    },
+    {
+      name: "Marco Lightweight Shirt",
+      price: "$128.50",
+      quantity: 37,
+      amount: "$4,754.50",
+    },
+    {
+      name: "Half Sleeve Shirt",
+      price: "$39.99",
+      quantity: 64,
+      amount: "$2,559.36",
+    },
+    {
+      name: "Lightweight Jacket",
+      price: "$20.00",
+      quantity: 184,
+      amount: "$3,680.00",
+    },
+    { name: "Marco Shoes", price: "$79.49", quantity: 64, amount: "$1,965.81" },
+  ],
+  totalSales: {
+    total: "$300.00",
+    channels: [
+      { name: "Direct", value: 300.56, color: "#1e40af", percentage: "20.9%" },
+      {
+        name: "Affiliate",
+        value: 135.18,
+        color: "#6366f1",
+        percentage: "23.3%",
+      },
+      {
+        name: "Sponsored",
+        value: 154.02,
+        color: "#8b5cf6",
+        percentage: "15.4%",
+      },
+      { name: "E-mail", value: 48.96, color: "#d1d5db", percentage: "7.9%" },
+    ],
+  },
+};
+
+export const ordersData = {
+  title: "Order List",
+  orders: [
+    {
+      id: "#CM9801",
+      user: {
+        name: "Natali Craig",
+        avatar: "https://i.pravatar.cc/150?img=10",
+      },
+      project: "Landing Page",
+      address: "Meadow Lane Oakland",
+      date: "Just now",
+      status: "In Progress",
+      statusColor: "blue",
+    },
+    {
+      id: "#CM9802",
+      user: {
+        name: "Kate Morrison",
+        avatar: "https://i.pravatar.cc/150?img=14",
+      },
+      project: "CRM Admin pages",
+      address: "Larry San Francisco",
+      date: "A minute ago",
+      status: "Complete",
+      statusColor: "green",
+    },
+    {
+      id: "#CM9803",
+      user: {
+        name: "Drew Cano",
+        avatar: "https://i.pravatar.cc/150?img=11",
+      },
+      project: "Client Project",
+      address: "Bagwell Avenue Ocala",
+      date: "1 hour ago",
+      status: "Pending",
+      statusColor: "cyan",
+    },
+    {
+      id: "#CM9804",
+      user: {
+        name: "Orlando Diggs",
+        avatar: "https://i.pravatar.cc/150?img=12",
+      },
+      project: "Admin Dashboard",
+      address: "Washburn Baton Rouge",
+      date: "Yesterday",
+      status: "Approved",
+      statusColor: "yellow",
+      checked: true,
+    },
+    {
+      id: "#CM9805",
+      user: {
+        name: "Andi Lane",
+        avatar: "https://i.pravatar.cc/150?img=13",
+      },
+      project: "App Landing Page",
+      address: "Nest Lane Olivette",
+      date: "Feb 2, 2023",
+      status: "Rejected",
+      statusColor: "gray",
+      hasIcon: true,
+    },
+    {
+      id: "#CM9801",
+      user: {
+        name: "Natali Craig",
+        avatar: "https://i.pravatar.cc/150?img=10",
+      },
+      project: "Landing Page",
+      address: "Meadow Lane Oakland",
+      date: "Just now",
+      status: "In Progress",
+      statusColor: "blue",
+    },
+    {
+      id: "#CM9802",
+      user: {
+        name: "Kate Morrison",
+        avatar: "https://i.pravatar.cc/150?img=14",
+      },
+      project: "CRM Admin pages",
+      address: "Larry San Francisco",
+      date: "A minute ago",
+      status: "Complete",
+      statusColor: "green",
+    },
+    {
+      id: "#CM9803",
+      user: {
+        name: "Drew Cano",
+        avatar: "https://i.pravatar.cc/150?img=11",
+      },
+      project: "Client Project",
+      address: "Bagwell Avenue Ocala",
+      date: "1 hour ago",
+      status: "Pending",
+      statusColor: "cyan",
+    },
+    {
+      id: "#CM9804",
+      user: {
+        name: "Orlando Diggs",
+        avatar: "https://i.pravatar.cc/150?img=12",
+      },
+      project: "Admin Dashboard",
+      address: "Washburn Baton Rouge",
+      date: "Yesterday",
+      status: "Approved",
+      statusColor: "yellow",
+    },
+    {
+      id: "#CM9805",
+      user: {
+        name: "Andi Lane",
+        avatar: "https://i.pravatar.cc/150?img=13",
+      },
+      project: "App Landing Page",
+      address: "Nest Lane Olivette",
+      date: "Feb 2, 2023",
+      status: "Rejected",
+      statusColor: "gray",
+    },
+  ],
+};
+
+export const sidebarData = {
+  notifications: [
+    {
+      id: 1,
+      icon: "bug",
+      title: "You have a bug that needs...",
+      time: "Just now",
+      type: "notification",
+    },
+    {
+      id: 2,
+      icon: "user",
+      title: "New user registered",
+      time: "59 minutes ago",
+      type: "notification",
+    },
+    {
+      id: 3,
+      icon: "bug",
+      title: "You have a bug that needs...",
+      time: "12 hours ago",
+      type: "notification",
+    },
+    {
+      id: 4,
+      icon: "radio",
+      title: "Andi Lane subscribed to you",
+      time: "Today, 11:59 AM",
+      type: "notification",
+    },
+  ],
+  activities: [
+    {
+      id: 1,
+      avatar: "https://i.pravatar.cc/150?img=1",
+      title: "You have a bug that needs...",
+      time: "Just now",
+      type: "activity",
+    },
+    {
+      id: 2,
+      avatar: "https://i.pravatar.cc/150?img=2",
+      title: "Released a new version",
+      time: "59 minutes ago",
+      type: "activity",
+    },
+    {
+      id: 3,
+      avatar: "https://i.pravatar.cc/150?img=3",
+      title: "Submitted a bug",
+      time: "12 hours ago",
+      type: "activity",
+    },
+    {
+      id: 4,
+      avatar: "https://i.pravatar.cc/150?img=4",
+      title: "Modified A data in Page X",
+      time: "Today, 11:59 AM",
+      type: "activity",
+    },
+    {
+      id: 5,
+      avatar: "https://i.pravatar.cc/150?img=5",
+      title: "Deleted a page in Project X",
+      time: "Feb 2, 2023",
+      type: "activity",
+    },
+  ],
+  contacts: [
+    {
+      id: 1,
+      name: "Natali Craig",
+      avatar: "https://i.pravatar.cc/150?img=10",
+      online: true,
+    },
+    {
+      id: 2,
+      name: "Drew Cano",
+      avatar: "https://i.pravatar.cc/150?img=11",
+      online: false,
+    },
+    {
+      id: 3,
+      name: "Orlando Diggs",
+      avatar: "https://i.pravatar.cc/150?img=12",
+      online: true,
+    },
+    {
+      id: 4,
+      name: "Andi Lane",
+      avatar: "https://i.pravatar.cc/150?img=13",
+      online: false,
+    },
+    {
+      id: 5,
+      name: "Kate Morrison",
+      avatar: "https://i.pravatar.cc/150?img=14",
+      online: true,
+    },
+    {
+      id: 6,
+      name: "Koray Okumus",
+      avatar: "https://i.pravatar.cc/150?img=15",
+      online: true,
+    },
+  ],
+};

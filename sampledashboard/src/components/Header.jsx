@@ -1,18 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Star, Sun, Moon, Clock, Bell } from "lucide-react";
 import { ThemeContext } from "../context/themeContext";
-
-// Mock JSON data structure
-const headerData = {
-  breadcrumbs: [
-    { id: 1, label: "Dashboards", link: "#" },
-    { id: 2, label: "Default", link: "#", active: true },
-  ],
-  search: {
-    placeholder: "Search",
-    shortcut: "⌘/",
-  },
-};
+import { headerData } from "../assests/mockData";
 
 const Header = () => {
   const [searchFocused, setSearchFocused] = useState(false);

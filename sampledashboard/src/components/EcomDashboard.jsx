@@ -15,124 +15,14 @@ import {
   Cell,
 } from "recharts";
 import { ThemeContext } from "../context/themeContext";
-
-// Mock JSON data
-const dashboardData = {
-  title: "eCommerce",
-  stats: [
-    {
-      id: 1,
-      label: "Customers",
-      value: "3,781",
-      change: "+11.01%",
-      trend: "up",
-      bgColor: "bg-blue-50",
-    },
-    {
-      id: 2,
-      label: "Orders",
-      value: "1,219",
-      change: "-0.03%",
-      trend: "down",
-      bgColor: "bg-gray-50",
-    },
-    {
-      id: 3,
-      label: "Revenue",
-      value: "$695",
-      change: "+15.03%",
-      trend: "up",
-      bgColor: "bg-gray-50",
-    },
-    {
-      id: 4,
-      label: "Growth",
-      value: "30.1%",
-      change: "+6.08%",
-      trend: "up",
-      bgColor: "bg-blue-50",
-    },
-  ],
-  projectionsData: [
-    { month: "Jan", value: 18 },
-    { month: "Feb", value: 22 },
-    { month: "Mar", value: 19 },
-    { month: "Apr", value: 24 },
-    { month: "May", value: 17 },
-    { month: "Jun", value: 23 },
-  ],
-  revenueData: [
-    { month: "Jan", current: 15, previous: 12 },
-    { month: "Feb", current: 18, previous: 20 },
-    { month: "Mar", current: 12, previous: 18 },
-    { month: "Apr", current: 20, previous: 15 },
-    { month: "May", current: 15, previous: 22 },
-    { month: "Jun", current: 22, previous: 20 },
-  ],
-  revenueComparison: {
-    current: "$58,211",
-    previous: "$68,768",
-  },
-  revenueByLocation: [
-    { city: "New York", amount: "72K", coordinates: [40.7, -74.0] },
-    { city: "San Francisco", amount: "39K", coordinates: [37.7, -122.4] },
-    { city: "Sydney", amount: "25K", coordinates: [33.8, 151.2] },
-    { city: "Singapore", amount: "61K", coordinates: [1.3, 103.8] },
-  ],
-  topSellingProducts: [
-    {
-      name: "ASOS Ridley High Waist",
-      price: "$79.49",
-      quantity: 82,
-      amount: "$6,518.18",
-    },
-    {
-      name: "Marco Lightweight Shirt",
-      price: "$128.50",
-      quantity: 37,
-      amount: "$4,754.50",
-    },
-    {
-      name: "Half Sleeve Shirt",
-      price: "$39.99",
-      quantity: 64,
-      amount: "$2,559.36",
-    },
-    {
-      name: "Lightweight Jacket",
-      price: "$20.00",
-      quantity: 184,
-      amount: "$3,680.00",
-    },
-    { name: "Marco Shoes", price: "$79.49", quantity: 64, amount: "$1,965.81" },
-  ],
-  totalSales: {
-    total: "$300.00",
-    channels: [
-      { name: "Direct", value: 300.56, color: "#1e40af", percentage: "20.9%" },
-      {
-        name: "Affiliate",
-        value: 135.18,
-        color: "#6366f1",
-        percentage: "23.3%",
-      },
-      {
-        name: "Sponsored",
-        value: 154.02,
-        color: "#8b5cf6",
-        percentage: "15.4%",
-      },
-      { name: "E-mail", value: 48.96, color: "#d1d5db", percentage: "7.9%" },
-    ],
-  },
-};
+import { dashboardData } from "../assests/mockData";
 
 const EcommerceDashboard = () => {
   const COLORS = ["#95A4FC", "#B1E3FF", "#BAEDBD", "#1C1C1C"];
   const { isDarkMode } = useContext(ThemeContext);
   return (
     <div
-      className={`flex-1 bg-gray-50 overflow-y-auto ${
+      className={`flex-1 overflow-y-auto ${
         isDarkMode ? "bg-zinc-800" : "bg-gray-50"
       }`}
     >
@@ -408,7 +298,7 @@ const EcommerceDashboard = () => {
             {/* Revenue by Location */}
             <div
               className={`${
-                isDarkMode ? "bg-zinc-700 text-white" : "text-gray-600"
+                isDarkMode ? "bg-zinc-700 text-white" : "bg-white text-gray-600"
               } rounded-lg p-5 shadow-sm`}
             >
               <h3
@@ -460,7 +350,7 @@ const EcommerceDashboard = () => {
             {/* Total Sales */}
             <div
               className={`rounded-lg p-5 shadow-sm  ${
-                isDarkMode ? "bg-zinc-700" : "bg-gray-50"
+                isDarkMode ? "bg-zinc-700" : "bg-white"
               }`}
             >
               <h3
